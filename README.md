@@ -25,12 +25,12 @@ EFI for Intel NUC8 i3/i5/i7 BEH/BEK with OpenCore bootloader
 | macOS Version    | Ventura Beta 13.6 (22G115)             |
 
 
-![info](./Screenshot/info.png)
+![info](./Screenshot/INFO.png)
 
 ## Peripherals
 
-![infohack](./Screenshot/hackintooldevice.png)
-
+![infohack](./Screenshot/hackintoolPERIPH.png)
+![infopci](./Screenshot/hackintoolPCI.png)
 
 ### What works and What doesn't or WIP:
 
