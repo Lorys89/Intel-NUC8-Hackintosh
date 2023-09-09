@@ -1,6 +1,7 @@
 [![](https://img.shields.io/badge/EFI-Release-informational?style=flat&logo=apple&logoColor=white&color=9debeb)](https://github.com/Lorys89/Intel-NUC8-Hackintosh/releases)
 
 # Intel NUC8 BEH & BEK Hackintosh
+# With Thunderbolt Hot-Plug Works without flashing
 
 EFI for Intel NUC8 i3/i5/i7 BEH/BEK with OpenCore bootloader
 
