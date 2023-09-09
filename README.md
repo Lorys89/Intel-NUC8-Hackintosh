@@ -22,6 +22,8 @@ EFI for Intel NUC8 i3/i5/i7 BEH/BEK with OpenCore bootloader
 | Card Reader.     | microSDXC Card Reader                  |
 | SmBios           | MacMini8,1                             |
 | BootLoader       | OpenCore                               |
+| macOS Version    | Ventura 13.6 (22G115)                  |
+
 
 ![info](./Screenshot/info.png)
 
