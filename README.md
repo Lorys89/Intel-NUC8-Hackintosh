@@ -63,7 +63,7 @@ These settings are important but are already set as needed by "Load Defaults"
 - Usb port mapping performed
 
 
-See [ioreg](./raw/main/IOREG-MacMini8%2C1.ioreg) for more clarification
+See [ioreg](./IOREG-MacMini8%2C1.ioreg) for more clarification
 
 ## Credits
 
