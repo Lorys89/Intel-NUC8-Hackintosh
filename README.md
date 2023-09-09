@@ -11,18 +11,18 @@ EFI for Intel NUC8 i3/i5/i7 BEH/BEK with OpenCore bootloader
 
 | Component        | Brank                                  |
 | ---------------- | ---------------------------------------|
-| CPU              | Intel® Core™ i3-8109U                  |
+| CPU              | Intel® Core™ i3-8109U (2C-4T)          |
 | iGPU             | Intel® Iris® Plus 655                  |
 | Lan              | Intel I219-V                           |
 | Audio            | Realtek ALC235                         |
-| Ram              | 16 Gb ddr4 2400 Mhz                    |
+| Ram              | 16 GB DDR4 2400 Mhz                    |
 | Wifi + Bluetooth | Intel® Wireless-AC 9560 + Bluetooth 5.0|
-| Nvme             | Samsung 970 evo plus 500GB             |
+| Nvme             | Samsung 970 EVO PLUS 500GB             |
 | SSD              | SiliconPower A55 512 GB                |
 | Card Reader.     | microSDXC Card Reader                  |
 | SmBios           | MacMini8,1                             |
-| BootLoader       | OpenCore                               |
-| macOS Version    | Ventura 13.6 (22G115)                  |
+| BootLoader       | OpenCore 0.9.4 (Release)               |
+| macOS Version    | Ventura Beta 13.6 (22G115)             |
 
 
 ![info](./Screenshot/info.png)
