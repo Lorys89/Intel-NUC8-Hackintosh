@@ -109,7 +109,7 @@ Press F10 to save and exit.
 - Usb port mapping performed
 
 
-See [ioreg]([./IOREG-MacMini8%2C1.ioreg](https://raw.githubusercontent.com/Lorys89/Intel-NUC8-Hackintosh/main/IOREG-MacMini8%2C1.ioreg)) for more clarification
+See [ioreg](https://raw.githubusercontent.com/Lorys89/Intel-NUC8-Hackintosh/main/IOREG-MacMini8%2C1.ioreg) for more clarification
 
 ## Credits
 
