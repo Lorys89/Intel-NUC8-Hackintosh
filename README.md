@@ -68,6 +68,8 @@ sudo pmset womp 0
 sudo pmset hibernatemode 0
 ```
 
+### For anyone who has flashed a modified Thunderbolt firmware and wants to restore the original one I provide you with the [original firmware](https://github.com/Lorys89/Intel-NUC8-Hackintosh/raw/main/Misc/Nuc8-BEH_K-Thunderbolt-FW-NVM46-Original.bin.zip).
+
 ## BIOS Settings:
 To start, choose "Load Defaults" (choose from the menu or press F9 in the BIOS setup).
 
@@ -130,7 +132,6 @@ Press F10 to save and exit.
 ### Special Config:
 
 - Usb port mapping performed
-
 
 See [ioreg](https://raw.githubusercontent.com/Lorys89/Intel-NUC8-Hackintosh/main/IOREG-MacMini8%2C1.ioreg) for more clarification
 
