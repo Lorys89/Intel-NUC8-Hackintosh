@@ -5,7 +5,7 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLV64Ea7.aml, Sun Sep 10 11:28:34 2023
+ * Disassembly of iASLzDvQ2o.aml, Sun Sep 10 11:35:04 2023
  *
  * Original Table Header:
  *     Signature        "SSDT"
@@ -79,7 +79,7 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "NUC8", 0x00000000)
                     P8XH (One, 0xC2)
                 }
 
-                Return (XTFY (Arg0, Arg1))
+                Return (\_GPE.XTFY (Arg0, Arg1))
             }
         }
 
