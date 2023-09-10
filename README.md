@@ -29,7 +29,7 @@ EFI for Intel NUC8 i3/i5/i7 BEH/BEK with OpenCore bootloader
 
 ## Peripherals
 
-![infospec](./Screenshot/Pc-SPEC.png)
+![infospec](./Screenshot/PC-SPEC.png)
 ![infoperiph](./Screenshot/PERIPH.png)
 ![infopci](./Screenshot/PCI.png)
 
