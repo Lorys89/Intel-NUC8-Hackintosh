@@ -49,14 +49,37 @@ EFI for Intel NUC8 i3/i5/i7 BEH/BEK with OpenCore bootloader
 To start, choose "Load Defaults" (choose from the menu or press F9 in the BIOS setup).
 
 Then change:
-- Boot->Boot Configuration, disable "Network Boot"
-- Power->Secondary Power Settings, "Wake on LAN from S4/S5", set to "Stay Off"
 
-These settings are important but are already set as needed by "Load Defaults"
-- Devices->Video, "IGD Minimum Memory" set to 64mb or 128mb
-- Devices->Video, "IGD Aperture Size" set to 256mb
-- Boot->Secure Boot, "Secure Boot" is disabled
-- Security->Security Features, "Execute Disable Bit" is enabled.
+1. DEVICES Section
+In "Onboard Devices" section → "Onboard Devices Configuration" panel → Set "SD Card" to Enabled
+In "USB" section → "USB Configuration" panel → Set "Portable Device Charging Mode" to "Off"
+In "USB" section → "USB Ports" panel → Set both "USB2 Header Connector" ports to Enabled
+In "Video" section → "Video Configuration" panel → Confirm that "IGD Minimum Memory" is set as 64 MB
+In "Video" section → "Video Configuration" panel → Confirm that "IGD Aperture Size" is set to 256 MB
+In "Onboard Devices" section → "Legacy Device Configuration" panel → Set "Enhanced Consumer IR" to Disabled
+In "Onboard Devices" section → "Legacy Device Configuration" panel → Set "HDMI CEC Control" to Enabled
+
+2. SECURITY Section
+In "Security Features" section → Set "Intel VT for Directed I/O (VT-d)" to Enabled
+In "Security Features" section → Set "Intel Software Guard Extension (SGX)" to Disabled
+In "Security Features" section → Set "Thunderbolt Security Level" to "Legacy Mode"
+
+3. POWER Section
+In "Secondary Power Settings" section → Set "Wake on LAN from S4/S5" to "Stay Off"
+In "Secondary Power Settings" section → Set "PCIe ASPM Support" to Disabled
+
+4. BOOT Section
+In "Secure Boot" section → "Secure Boot Configuration" panel → Set "Secure Boot" to Disabled
+In "Boot Priority" section → "UEFI Boot Priority" panel → Confirm that "UEFI Boot" is Enabled
+In "Boot Configuration" section → "UEFI Boot" panel → Set "Fast Boot" to Disabled
+In "Boot Configuration" section → "UEFI Boot" panel → Set "Boot USB Devices First" to Enabled
+In "Boot Configuration" section → "UEFI Boot" panel → Set "Boot Network Devices Last" to Disabled
+In "Boot Configuration" section → "UEFI Boot" panel → Set "Startup Sound" to Disabled
+In "Boot Devices" section → "Boot Devices" panel → Set "Thunderbolt Boot" to Enabled
+In "Boot Devices" section → "Boot Devices" panel → Set "Optical Boot" to Disabled
+In "Boot Devices" section → "Boot Devices" panel → Set "Network Boot" to Disabled
+In "Boot Devices" section → "Boot Display Configuration" panel → Set "Display F7 to Update BIOS" to Disabled
+Press F10 to save and exit.
 
 ### Special Config:
 
