@@ -35,16 +35,25 @@ EFI for Intel NUC8 i3/i5/i7 BEH/BEK with OpenCore bootloader
 
 ### What works and What doesn't or WIP:
 
-- [x] Intel Intel® Iris® Plus 655 iGPU HDMI Output
+- [x] Intel® Iris® Plus 655 iGPU HDMI Output
+- [x] Intel® Iris® Plus 655 iGPU - H264 & HEVC
 - [x] ALC235 Internal Speakers
 - [x] ALC235 HDMI Audio Output
 - [x] All USB Ports 
 - [x] SpeedStep / Sleep / Wake
 - [x] Intel I219-V
+- [x] Controller NVME PciE Gen3x4
+- [x] Controller SATA III
 - [x] Thunderbolt 3 port (hotplug without fw flash)
 - [x] AC 9560 Wireless + Bluetooth
 - [x] microSDXC Card Reader
 - [x] NVRAM
+- [x] All Sensors (CPU, NVME, SATA, FAN)
+- [x] Windows 11 boot from OpenCore
+
+### MacOS bootable USB creation:
+- Read the Dortania guide for creating your USB from Windows or macOS
+- [Guide Dortania](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/) - USB creation
 
 ## Post Install
 
