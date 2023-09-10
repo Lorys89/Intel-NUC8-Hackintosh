@@ -46,6 +46,7 @@ EFI for Intel NUC8 i3/i5/i7 BEH/BEK with OpenCore bootloader
 - [x] Controller SATA III
 - [x] Thunderbolt 3 port (hotplug without fw flash)
 - [x] AC 9560 Wireless + Bluetooth
+- [x] PWRB & SLPB
 - [x] microSDXC Card Reader
 - [x] NVRAM
 - [x] All Sensors (CPU, NVME, SATA, FAN)
