@@ -45,6 +45,19 @@ EFI for Intel NUC8 i3/i5/i7 BEH/BEK with OpenCore bootloader
 - [x] microSDXC Card Reader
 - [x] NVRAM
 
+## Post Install
+
+Finally make sure sleep works properly. You can skip some of these but it will make your machine wake up from time to time. Same as real Macs.
+```
+sudo pmset standby 0
+sudo pmset autopoweroff 0 
+sudo pmset proximitywake 0
+sudo pmset powernap 0 
+sudo pmset tcpkeepalive 0
+sudo pmset womp 0
+sudo pmset hibernatemode 0
+```
+
 ## BIOS Settings:
 To start, choose "Load Defaults" (choose from the menu or press F9 in the BIOS setup).
 
