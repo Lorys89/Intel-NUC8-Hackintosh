@@ -32,6 +32,7 @@ EFI for Intel NUC8 i3/i5/i7 BEH/BEK with OpenCore bootloader
 ![infospec](./Screenshot/PC-SPEC.png)
 ![infoperiph](./Screenshot/PERIPH.png)
 ![infopci](./Screenshot/PCI.png)
+![infovideoproc](./Screenshot/VIDEOPROC.png)
 
 ### What works and What doesn't or WIP:
 
@@ -51,6 +52,11 @@ EFI for Intel NUC8 i3/i5/i7 BEH/BEK with OpenCore bootloader
 - [x] NVRAM
 - [x] All Sensors (CPU, NVME, SATA, FAN)
 - [x] Windows 11 boot from OpenCore
+
+### Benchmark
+![infocpu](./Screenshot/CPU.png)
+![infoopencl](./Screenshot/OPENCL.png)
+![infometal](./Screenshot/METAL.png)
 
 ### MacOS bootable USB creation:
 - Read the Dortania guide for creating your USB from Windows or macOS
