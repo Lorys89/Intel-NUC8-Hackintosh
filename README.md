@@ -57,7 +57,7 @@ EFI for Intel NUC8 i3/i5/i7 BEH/BEK with OpenCore bootloader
 
 ## Post Install
 
-Finally make sure sleep works properly. You can skip some of these but it will make your machine wake up from time to time. Same as real Macs.
+For proper sleep it is recommended to set these commands from the terminal.
 ```
 sudo pmset standby 0
 sudo pmset autopoweroff 0 
