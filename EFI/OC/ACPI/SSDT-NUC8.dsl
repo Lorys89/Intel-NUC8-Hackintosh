@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLiVkjXf.aml, Sat Sep  9 17:51:23 2023
+ * Disassembly of iASLV64Ea7.aml, Sun Sep 10 11:28:34 2023
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x00000660 (1632)
+ *     Length           0x000006A1 (1697)
  *     Revision         0x02
- *     Checksum         0x8A
+ *     Checksum         0xAB
  *     OEM ID           "APPLE"
  *     OEM Table ID     "NUC8"
  *     OEM Revision     0x00000000 (0)
@@ -20,7 +20,7 @@
  */
 DefinitionBlock ("", "SSDT", 2, "APPLE", "NUC8", 0x00000000)
 {
-    External (_GPE.XTFY, MethodObj)    // 0 Arguments
+    External (_GPE.XTFY, MethodObj)    // 2 Arguments
     External (_SB_.PCI0, DeviceObj)
     External (_SB_.PCI0.LPCB, DeviceObj)
     External (_SB_.PCI0.LPCB.H_EC, DeviceObj)
@@ -36,8 +36,11 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "NUC8", 0x00000000)
     External (_SB_.PCI0.XHC_, DeviceObj)
     External (_SB_.PR00, ProcessorObj)
     External (_SB_.TBFP, MethodObj)    // 2 Arguments
+    External (ADBG, MethodObj)    // 1 Arguments
     External (DVID, FieldUnitObj)
     External (HPTE, IntObj)
+    External (NOHP, FieldUnitObj)
+    External (P8XH, MethodObj)    // 2 Arguments
     External (STAS, IntObj)
 
     Scope (\)
@@ -50,23 +53,33 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "NUC8", 0x00000000)
 
         Scope (_GPE)
         {
-            Method (NTFY, 1, Serialized)
+            Method (NTFY, 2, Serialized)
             {
                 If (_OSI ("Darwin"))
                 {
-                    Switch (ToInteger (Arg0))
+                    ADBG ("NTFY")
+                    If ((NOHP == One))
                     {
-                        Case (0x05)
+                        If ((Arg1 == One))
                         {
-                            Notify (\_SB.PCI0.RP05.PXSX.DSB0.NHI0, Zero) // Bus Check
-                            Notify (\_SB.PCI0.RP05.PXSX.TBDU.XHC, Zero) // Bus Check
-                            Notify (\_SB.PCI0.XHC, Zero) // Bus Check
-                        }
+                            Switch (ToInteger (Arg0))
+                            {
+                                Case (0x05)
+                                {
+                                    Notify (\_SB.PCI0.RP05.PXSX.DSB0.NHI0, Zero) // Bus Check
+                                    Notify (\_SB.PCI0.RP05.PXSX.TBDU.XHC, Zero) // Bus Check
+                                    Notify (\_SB.PCI0.XHC, Zero) // Bus Check
+                                }
 
+                            }
+                        }
                     }
+
+                    P8XH (Zero, 0xC2)
+                    P8XH (One, 0xC2)
                 }
 
-                Return (XTFY ())
+                Return (XTFY (Arg0, Arg1))
             }
         }
 
